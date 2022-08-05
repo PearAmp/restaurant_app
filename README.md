@@ -1,6 +1,6 @@
 # restaurant_app
 
-A new Flutter project.88999djk
+A new Flutter project.
 
 ## Getting Started
 
