@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:restaurant_app/page/page1/components/delivery.dart';
 import 'package:restaurant_app/page/page1/components/how_it_work.dart';
+import 'package:restaurant_app/page/page1/components/show_head_text.dart';
 import 'package:restaurant_app/theme/theme_style.dart';
 
 import '../../components/search/search_field.dart';
@@ -72,17 +74,8 @@ class _FirstPageState extends State<FirstPage> {
               label: 'search for pear restaurant',
             ),
             const Gap(40),
-            Row(
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      'การใช้งาน',
-                      style: Styles.textcontantThhearder,
-                    )
-                  ],
-                ),
-              ],
+            const ShowHeadText(
+              titlehead: 'การใช้งาน',
             ),
             const Gap(20),
             SizedBox(
@@ -109,6 +102,34 @@ class _FirstPageState extends State<FirstPage> {
                 ),
               ),
             ),
+            const Gap(20),
+            const ShowHeadText(
+              titlehead: 'วิธีการส่ง',
+            ),
+            const Gap(20),
+            const Delivery(
+                image: 'assets/images/courier.png',
+                title: 'As a Driver',
+                subtitle:
+                    'ทางร้านได้ร่วมกันกับ Platform Foddpanda Grap Lineman และ Robinhoud'),
+            const Divider(
+              color: Colors.amber,
+              height: 50,
+            ),
+            const Delivery(
+                image: 'assets/images/partner.png',
+                title: 'As a Partner',
+                subtitle:
+                    'ทางร้านได้มี partner จากแหล่งต่างๆ ไม่ว่าจะเป็น supermarket , 7-11 หรือ ร้านอาหารต่างๆ '),
+            const Divider(
+              color: Colors.amber,
+              height: 50,
+            ),
+            const Delivery(
+                image: 'assets/images/chef.png',
+                title: 'As a Chef',
+                subtitle:
+                    'การันตีความอร่อยด้วยเชฟที่มีประสปการณ์มากกว่า 10 ปี'),
           ],
         ),
       ),
