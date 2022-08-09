@@ -52,8 +52,8 @@ class _BottomBarState extends State<BottomBar> {
               activeIcon: Icon(Icons.home_rounded),
               label: 'Home'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.food_bank_rounded),
-              activeIcon: Icon(Icons.food_bank_rounded),
+              icon: Icon(Icons.restaurant_rounded),
+              activeIcon: Icon(Icons.restaurant_rounded),
               label: 'Restaurant'),
           BottomNavigationBarItem(
               icon: Icon(Icons.search),
