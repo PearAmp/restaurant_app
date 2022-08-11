@@ -21,7 +21,7 @@ class _ThirtPageState extends State<ThirtPage> {
     return Scaffold(
       backgroundColor: Styles.maincolor,
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: ListView(
           children: const [
             ButtonPopup(),
@@ -108,7 +108,6 @@ class _ThirtPageState extends State<ThirtPage> {
               title: 'Salad',
               price: '199 Bath',
             ),
-            Gap(20)
           ],
         ),
       ),
